@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientações para prova</title>
+    <style>
+        .reversa {
+            direction: rtl; 
+            unicode-bidi: bidi-override; 
+        }
+        .hover-bombardier:hover {
+            content: "Bombardier";
+        }
+        .destaque {
+            color: white;
+            background-color: blue;
+            padding: 2px 5px;
+            font-weight: bold;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        ol ol {
+            margin-left: 20px;
+        }
+        .negrito {
+            font-weight: bold;
+        }
+        .sublinhado {
+            text-decoration: underline;
+        }
+        .sublinhado-pontilhado {
+            text-decoration: underline dotted;
+        }
+        .form-indice {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .numero-romano {
+            font-size: 0.8em;
+        }
+        .linha-corte {
+            text-decoration: line-through;
+        }
+        .prova-titulo {
+            color: white;
+            background-color: red;
+            padding: 5px 10px;
+            font-weight: bold;
+            font-size: 1.5em;
+            display: inline-block; 
+            margin-bottom: 15px;
+        }
+       
+        .alinhamento-frases {
+            text-align: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="prova-titulo">Prova HTML5 Turma O</div>
+    <div class="form-indice">
+        <span class="destaque">Formulário</span>
+    </div>
+    <form action="melhores.php" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="mae">Nome da Mãe:</label><br>
+        <input type="text" id="mae" name="mae"><br><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="text" id="telefone" name="telefone"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <div class="form-indice">
+        <span class="destaque">Índice HTML5</span>
+    </div>
+    <ol>
+        <li><span class="negrito sublinhado">Capítulo</span> <span class="sublinhado negrito">Os melhores</span>
+            <ol>
+                <li><span class="numero-romano">I</span> Seção I
+                    <ol>
+                        <li>Subseção Carros <span class="negrito">A</span></li>
+                        <li class="linha-corte">Rolls-Royce (indisponível)</li>
+                        <li>Bugatti</li>
+                        <li>Ferrari</li>
+                    </ol>
+                </li>
+                <li><span class="numero-romano">II</span> Seção II
+                    <ol>
+                        <li>Subseção Motos <span class="negrito">B</span></li>
+                        <li>Ducati Diavel 1260 S</li>
+                        <li>BMW K 1600 Bagger</li>
+                        <li>Harley-Davidson</li>
+                    </ol>
+                </li>
+                <li><span class="numero-romano">III</span> Seção III
+                    <ol>
+                        <li>Subseção "Motos" <span class="negrito">B</span>
+                            <ol>
+                                <li>Ducati Diavel 1260 S</li>
+                                <li>BMW K 1600 Bagger</li>
+                                <li>Harley-Davidson</li>
+                            </ol>
+                        </li>
+                        <li>Subseção Jatinhos <span class="negrito">C</span>
+                            <ol>
+                                <li>Dassault</li>
+                                <li>Pilatus PC-24</li>
+                                <li class="sublinhado-pontilhado">Challenger 350</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <div class="alinhamento-frases">
+        <p>"O sucesso é alcançado com perseverança e dedicação!"</p>
+        <p class="reversa">Nunca desista!</p>
+    </div>
+</body>
+</html>
